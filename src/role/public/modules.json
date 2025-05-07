@@ -1,0 +1,83 @@
+const modules = {[
+    {
+        "label": "User Management",
+        "connectedFeature": "FeatureKey",
+        "moduleKey": "users",
+        "accessRules": {
+            "viewUsers": {
+                "label": "View Users",
+                "connectedFeature": "FeatureKey",
+                "defaultPermission": true
+            },
+            "editUser": {
+                "label": "Edit User",
+                "connectedFeature": "FeatureKey"
+            },
+            "addUser": {
+                "label": "Add User"
+            },
+            "deleteUser": {
+                "label": "Delete User"
+            },
+            "exportUsers": {
+                "label": "Export Users"
+            },
+            "importUsers": {
+                "label": "Import Users"
+            },
+            "inviteUsers": {
+                "label": "Invite Users"
+            },
+            "loginAsUser": {
+                "label": "Login as User"
+            },
+            "permissions": {
+                "label": "Permissions"
+            }
+        }
+    },
+    {
+        "label": "Reports",
+        "connectedFeature": "FeatureKey",
+        "moduleKey": "reports",
+        "accessRules": {
+            "viewReport": {
+                "label": "View Report",
+                "connectedFeature": "FeatureKey",
+                "defaultPermission": true
+            },
+            "exportReport": {
+                "label": "Export Report",
+                "connectedFeature": "FeatureKey"
+            }
+        }
+    },
+    {
+        "label": "Groups",
+        "connectedFeature": "FeatureKey",
+        "moduleKey": "groups",
+        "accessRules": {
+            "viewGroups": {
+                "label": "View Groups",
+                "connectedFeature": "FeatureKey",
+                "defaultPermission": true
+            },
+            "editGroup": {
+                "label": "Edit Group",
+                "connectedFeature": "FeatureKey"
+            },
+            "addGroup": {
+                "label": "Add Group"
+            },
+            "deleteGroup": {
+                "label": "Delete Group"
+            },
+            "exportGroups": {
+                "label": "Export Groups"
+            }
+        }
+    }
+]}
+
+const toString = JSON.Stringify(modules)
+export default toString;
